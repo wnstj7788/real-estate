@@ -1,0 +1,793 @@
+<!-- /*
+* Template Name: Property
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>SSAFY House</title>
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index.html" class="logo m-0 float-start">SSAFY House</a>
+
+            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+              <li class="active"><a href="index.html">Home</a></li>
+
+              <li><a href="properties.html">매물</a></li>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="services.html">회원가입</a></li>
+              <!-- <li><a href="services.html">Services</a></li> -->
+              <li><a href="about.html">About</a></li>
+              <li><a href="index.html">로그아웃</a></li>
+              <!-- <li><a href="contact.html">Contact Us</a></li> -->
+            </ul>
+
+            <a
+              href="#"
+              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-slide">
+        <div class="img overlay" style="background-image: url('images/home1.jpg')"></div>
+        <div class="img overlay" style="background-image: url('images/home2.jpg')"></div>
+        <div class="img overlay" style="background-image: url('images/home3.jpg')"></div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center">
+            <h1 class="heading" data-aos="fade-up">어떤 집에 살고 싶나요?</h1>
+            <form
+              action="#"
+              class="narrow-w form-search d-flex align-items-stretch mb-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <input type="text" class="form-control px-4" placeholder="ex) 청담동 전원주택" />
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="font-weight-bold text-primary heading">실시간 최고가 매물</h2>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <p>
+              <a href="properties.html" target="_blank" class="btn btn-primary text-white py-3 px-4"
+                >매물 확인</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="property-slider-wrap">
+              <div class="property-slider">
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>12.9억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국, 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">4 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">5 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>38.4억</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">서울 강남구 청담동</span>
+                      <span class="city d-block mb-3">대한민국 서울</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">4 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3">상세보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- .item -->
+
+                <!-- .item -->
+
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="city d-block mb-3">California, USA</span>
+
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baths</span>
+                        </span>
+                      </div>
+
+                      <a href="property-single.html" class="btn btn-primary py-2 px-3"
+                        >See details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+              </div>
+
+              <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
+                <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1"
+                  >Prev</span
+                >
+                <span class="next" data-controls="next" aria-controls="property" tabindex="-1"
+                  >Next</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row section-counter mt-5">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"><span class="countup text-primary">2917</span></span>
+              <span class="caption text-black-50"># 실시간 이용자 수 </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"><span class="countup text-primary">3918</span></span>
+              <span class="caption text-black-50"># 올해 총 거래량 </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"><span class="countup text-primary">38928</span></span>
+              <span class="caption text-black-50"># 총 거래량 </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"><span class="countup text-primary">1291</span></span>
+              <span class="caption text-black-50"># 잔여 매물</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-6 mb-5">
+            <h2 class="font-weight-bold heading text-primary mb-4">Our Agents</h2>
+            <p class="text-black-50">
+              세상에서 가장 완벽한 라이프스타일을 경험하세요. 단지 편안함이 아닌, 삶의 질과 더불어
+              지속가능한 미래를 모두 갖출 수 있는 공간을 찾는 것입니다. 최상의 자연환경과 고급스러운
+              편의시설, 최신 기술과 감각적인 미학이 모두 결합된 곳에서 새로운 삶을 시작해보세요.
+              여기서는 건강한 생활을 할 수 있는 다양한 시설과 서비스를 제공하며, 더 나은 삶을 위한
+              커뮤니티와 연결됩니다. 이곳에서 최상의 품질과 생활의 즐거움, 그리고 미래를 함께
+              만들어나가세요.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div class="h-100 person">
+              <img src="images/LEEHYO.jpeg" alt="Image" class="img-fluid" />
+
+              <div class="person-contents">
+                <h2 class="mb-0"><a href="#">이효경 </a></h2>
+                <span class="meta d-block mb-3">CEO</span>
+                <p>파이팅!</p>
+
+                <ul class="social list-unstyled list-inline dark-hover">
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-linkedin"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div class="h-100 person">
+              <img src="images/junseo.jpg" alt="Image" class="img-fluid" />
+
+              <div class="person-contents">
+                <h2 class="mb-0"><a href="#">최준서</a></h2>
+                <span class="meta d-block mb-3">CSO</span>
+                <p>읏짜</p>
+
+                <ul class="social list-unstyled list-inline dark-hover">
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-linkedin"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div class="h-100 person">
+              <img src="images/junseo.jpg" alt="Image" class="img-fluid" />
+
+              <div class="person-contents">
+                <h2 class="mb-0"><a href="#">최준서</a></h2>
+                <span class="meta d-block mb-3">CSO</span>
+                <p>읏짜</p>
+
+                <ul class="social list-unstyled list-inline dark-hover">
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-linkedin"></span></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>서울특별시 청담동 청하힐빌딩 999호</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">010-1234-5678</a></li>
+                <li><a href="tel://11234567890">010-1234-5678</a></li>
+                <li>
+                  <a href="mailto:info@mydomain.com">wnstj7788@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Creative</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Our Vision</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-pinterest"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-dribbble"></span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
+
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by
+              <a href="https://untree.co">Untree.co</a>
+              <!-- License information: https://untree.co/license/ -->
+            </p>
+            <div>
+              Distributed by
+              <a href="https://themewagon.com/" target="_blank">themewagon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
