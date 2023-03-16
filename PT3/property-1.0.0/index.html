@@ -28,6 +28,39 @@
     <link rel="stylesheet" href="css/tiny-slider.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      window.onload =function(){
+        // alert("여기");
+    
+        var flag = window.localStorage.getItem("loginflg");
+        if(flag==0 || flag==null){
+          console.log(flag);
+              var loginNav = document.getElementById("loginNav");
+    confirmOnObj.style.display = "block";
+    
+    var logoutNav = document.getElementById("logoutNav");
+    confirmOffObj.style.display = "none";
+    
+        }else{
+                  var loginNav = document.getElementById("loginNav");
+        confirmOnObj.style.display = "none";
+    
+        var logoutNav = document.getElementById("logoutNav");
+        confirmOffObj.style.display = "block";
+    
+        }
+    
+    
+      }
+      function logout() {
+alert("로그아웃 완료!");
+window.localStorage.setItem('loginflg', 0);
+
+   
+}
+    
+    
+    </script>
 
     <title>SSAFY House</title>
   </head>
@@ -51,11 +84,11 @@
               <li class="active"><a href="index.html">Home</a></li>
 
               <li><a href="properties.html">매물</a></li>
-              <li><a href="login.html">로그인</a></li>
-              <li><a href="services.html">회원가입</a></li>
+              <li><a href="login.html" id = "loginNav">로그인</a></li>
+              <li><a href="signUp.html">회원가입</a></li>
               <!-- <li><a href="services.html">Services</a></li> -->
               <li><a href="about.html">About</a></li>
-              <li><a href="index.html">로그아웃</a></li>
+              <li><a href="index.html" id = "logoutNav" onclick="javascript:logout();">로그아웃</a></li>
               <!-- <li><a href="contact.html">Contact Us</a></li> -->
             </ul>
 

@@ -16,6 +16,8 @@
     />
 
     <link rel="stylesheet" href="css/style_login.css" />
+    
+    <script src="./js/login.js"></script>
   </head>
   <body>
     <section class="ftco-section">
@@ -49,13 +51,13 @@
                     </p>
                   </div>
                 </div>
-                <form action="#" class="signin-form">
+                <form action="http://127.0.0.1:5500/PT3/property-1.0.0/index.html" class="signin-form">
                   <div class="form-group mt-3">
-                    <input type="text" class="form-control" required />
-                    <label class="form-control-placeholder" for="username">Username</label>
+                    <input type="text" id ="id" class="form-control" required />
+                    <label class="form-control-placeholder" for="username" >Username</label>
                   </div>
                   <div class="form-group">
-                    <input id="password-field" type="password" class="form-control" required />
+                    <input id="password-field"  type="password" class="form-control" required  />
                     <label class="form-control-placeholder" for="password">Password</label>
                     <span
                       toggle="#password-field"
@@ -67,6 +69,7 @@
                       type="submit"
                       class="form-control btn rounded text-white submit px-3"
                       style="background-color: #005555"
+                      onclick="javascript:login();"
                     >
                       Sign In
                     </button>
@@ -85,7 +88,7 @@
                   </div>
                 </form>
                 <p class="text-center">
-                  Not a member? <a data-toggle="tab" href="#signup">Sign Up</a>
+                  Not a member? <a data-toggle="tab" href="signUp.html">Sign Up</a>
                 </p>
               </div>
             </div>
@@ -94,9 +97,9 @@
       </div>
     </section>
 
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> -->
   </body>
 </html>
