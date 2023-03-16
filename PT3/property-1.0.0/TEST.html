@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="keyword" placeholder="검색어를 입력하세요." />
+
+    <div id="result">검색 결과 영역</div>
+    <button id="search">검색</button>
+    <script>
+      var btn = document.getElementById("search");
+
+      btn.onclick = function () {
+        fetch(
+          "http://openapi.molit.go.kr:8081/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTrade?serviceKey=sJPc2RVVCagMsd9%2Fl4AEtullVrIY0Xm96x60S0vEMNhA0d3H786GIDQM%2BHJzBiEfpFPDiFQSlJFrZdP3qe1aqQ%3D%3D&LAWD_CD=11110&DEAL_YMD=201512"
+        )
+          .then(function (resp) {
+            return resp.text();
+          })
+          .then(function (data) {
+            let parser = new DOMParser();
+            const xml = parser.parseFromString(data, "application/xml");
+            console.log(data);
+            let items = xml.querySelectorAll("item");
+            console.log(items);
+
+            var el = `
+          `;
+
+            items.forEach(function (item) {
+              el += `<div class="property-item">
+    <a href="property-single.html" class="img">
+      <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+    </a>
+
+    <div class="property-content">
+      <div class="price mb-2"><span>${item.querySelector("거래금액").textContent}</span></div>
+      <div>
+        <span class="d-block mb-2 text-black-50"
+          >${item.querySelector("아파트").textContent}</span
+        >
+        <span class="city d-block mb-3">${item.querySelector("법정동").textContent}</span>
+
+        <div class="specs d-flex mb-4">
+          <span class="d-block d-flex align-items-center me-3">
+            <span class="icon-bed me-2"></span>
+            <span class="caption">2 beds</span>
+          </span>
+          <span class="d-block d-flex align-items-center">
+            <span class="icon-bath me-2"></span>
+            <span class="caption">2 baths</span>
+          </span>
+        </div>
+
+        <a href="property-single.html" class="btn btn-primary py-2 px-3"
+          >See details</a
+        >
+      </div>
+    </div>
+  </div>`;
+            });
+
+            el += `</table>`;
+
+            document.getElementById("property-slider_zone").innerHTML = el;
+          });
+      };
+
+      console.log("언제 출력");
+    </script>
+  </body>
+</html>
